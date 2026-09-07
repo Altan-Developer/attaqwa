@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#9a7027">
+<title>Masjid Jami' At-Taqwa — Bumisari Natar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4eee3;--paper:#fffaf2;--soft:#eee2cf;--ink:#30291f;--muted:#786d5d;--gold:#9a7027;--line:rgba(48,41,31,.12);--shadow:0 25px 80px rgba(67,48,20,.14);--r:28px;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"DM Sans",sans-serif;background:radial-gradient(circle at 10% 0,#fffaf1 0,#f4eee3 45%,#ecdfcb 100%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;opacity:.06;background-image:radial-gradient(var(--gold) 1px,transparent 1px);background-size:22px 22px}
+a{text-decoration:none;color:inherit}.wrap{width:min(var(--max),calc(100% - 32px));margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:90;background:rgba(244,238,227,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{display:flex;align-items:center;gap:10px;font-weight:800}.brand img{width:42px;height:52px;object-fit:contain}.brand small{font-weight:500;color:var(--muted)}
+.navlinks{display:flex;gap:3px}.navlinks a{font-size:13px;color:var(--muted);padding:10px 12px;border-radius:99px}.navlinks a:hover{background:var(--paper);color:var(--ink)}
+.btn{border:0;border-radius:999px;background:var(--gold);color:white;padding:12px 17px;font:700 13px "DM Sans";cursor:pointer;box-shadow:0 10px 25px rgba(125,88,27,.22);transition:.2s}.btn:hover{transform:translateY(-2px)}.btn.ghost{background:transparent;color:var(--ink);box-shadow:none;border:1px solid var(--line)}
+.hero{min-height:100vh;padding:125px 0 70px;display:grid;place-items:center}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.eyebrow,.tag{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.eyebrow{display:inline-block;padding:9px 12px;border-radius:99px;background:rgba(154,112,39,.09);border:1px solid rgba(154,112,39,.15)}
+h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.06}h1{font-size:clamp(48px,7vw,86px);letter-spacing:-.045em;margin:20px 0}h2{font-size:clamp(36px,5vw,58px);margin:0}h3{margin:0}.gold{color:var(--gold)}.lead{max-width:650px;color:var(--muted);font-size:18px;line-height:1.8}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+.hero-art{min-height:500px;border:1px solid var(--line);border-radius:42px;background:linear-gradient(145deg,#fffaf1,#eadcc5);box-shadow:var(--shadow);display:grid;place-items:center;position:relative;overflow:hidden}.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid rgba(154,112,39,.2);border-radius:50%;width:430px;height:430px}.hero-art:after{width:310px;height:310px}.hero-logo{width:min(72%,420px);z-index:2;filter:drop-shadow(0 18px 22px rgba(55,40,15,.13))}.float{position:absolute;z-index:3;padding:13px 15px;border-radius:18px;background:rgba(255,250,242,.91);border:1px solid var(--line);box-shadow:0 15px 35px rgba(55,40,18,.1);font-size:13px}.float.one{top:10%;left:6%}.float.two{right:6%;bottom:10%}
+section{padding:105px 0}.head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:30px}.head p{max-width:500px;color:var(--muted);line-height:1.75;margin:0}.kicker{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
+.card{background:rgba(255,250,242,.84);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:18px}.quote,.copy{padding:38px}.quote{background:linear-gradient(145deg,#eadcc5,#fff8ee);min-height:330px;display:flex;flex-direction:column;justify-content:center}.arabic{font:700 39px/1.7 "Amiri";direction:rtl;color:var(--gold)}.quote p,.copy p{color:var(--muted);line-height:1.85}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}.fact{background:var(--soft);padding:17px;border-radius:18px}.fact b{display:block;color:var(--gold);font-size:22px}.fact span{font-size:11px;color:var(--muted)}
+.programs{display:grid;grid-template-columns:1fr 1fr;gap:18px}.program{display:grid;grid-template-columns:42% 58%;min-height:230px;overflow:hidden;cursor:pointer;transition:.25s}.program:hover{transform:translateY(-5px)}.program img{width:100%;height:100%;object-fit:cover;display:block}.program-body{padding:25px;display:flex;flex-direction:column;justify-content:center}.program h3{font-size:25px;margin:9px 0}.program p{color:var(--muted);font-size:14px;line-height:1.7;margin:0}.arrow{margin-top:18px;color:var(--gold);font-weight:800;font-size:12px}
+.events{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.event{padding:22px;display:grid;grid-template-columns:78px 1fr;gap:17px}.date{background:var(--soft);border-radius:18px;text-align:center;padding:11px;color:var(--gold)}.date b{display:block;font:700 28px "Playfair Display"}.date span{font-size:10px;font-weight:800;text-transform:uppercase}.event h3{font-size:22px}.event p{color:var(--muted);font-size:13px;line-height:1.65;margin:8px 0}.meta{font-size:12px;color:var(--gold);font-weight:800}
+.activities{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.activity{padding:24px;display:flex;gap:16px;align-items:flex-start;transition:.25s}.activity:hover{transform:translateY(-4px)}.activity-no{width:48px;height:48px;flex:0 0 48px;border-radius:16px;background:var(--soft);display:grid;place-items:center;color:var(--gold);font:700 18px "Playfair Display"}.activity h3{font-size:21px;margin-bottom:7px}.activity p{margin:0;color:var(--muted);font-size:13px;line-height:1.65}
+.gallery{display:grid;grid-template-columns:1.4fr .8fr .8fr;grid-auto-rows:210px;gap:14px}.photo{overflow:hidden;border-radius:24px;border:1px solid var(--line);position:relative}.photo:first-child{grid-row:span 2}.photo img{width:100%;height:100%;object-fit:cover}.caption{position:absolute;left:12px;right:12px;bottom:12px;color:white;background:rgba(35,28,20,.55);backdrop-filter:blur(8px);border-radius:13px;padding:9px 11px;font-size:12px}
+.location{display:grid;grid-template-columns:.8fr 1.2fr;gap:18px}.location-card{padding:30px}.address{background:var(--soft);padding:15px;border-radius:17px;color:var(--muted);line-height:1.65;margin:18px 0}.map{width:100%;height:430px;border:0;border-radius:28px;box-shadow:var(--shadow)}
+footer{padding:60px 0 35px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:25px}.foot strong{font:24px "Playfair Display";color:var(--ink)}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s ease}.reveal.show{opacity:1;transform:none}
+.pop{position:fixed;right:18px;bottom:25px;z-index:80;max-width:310px;padding:16px 18px;background:rgba(255,250,242,.96);border:1px solid var(--line);border-radius:20px;box-shadow:0 20px 55px rgba(50,35,15,.18);opacity:0;transform:translateY(25px);pointer-events:none;transition:.35s}.pop.show{opacity:1;transform:none}.pop b{display:block;color:var(--gold);margin-bottom:4px}.pop span{color:var(--muted);font-size:13px}
+.modal{position:fixed;inset:0;z-index:120;background:rgba(37,29,20,.58);backdrop-filter:blur(9px);display:none;padding:18px}.modal.open{display:grid;place-items:center}.modalbox{width:min(920px,100%);max-height:92vh;overflow:auto;background:var(--paper);border-radius:30px;box-shadow:0 35px 100px rgba(0,0,0,.25);overflow:hidden}.modalmedia{height:min(48vh,420px);background:var(--soft)}.modalmedia img{width:100%;height:100%;object-fit:cover}.modalbody{padding:28px}.modalbody p{color:var(--muted);line-height:1.8}.close{float:right}
+@media(max-width:900px){.hero-grid,.about,.location{grid-template-columns:1fr}.hero-art{min-height:390px}.programs,.events,.activities{grid-template-columns:1fr}.navlinks{display:none}.head{display:block}.head p{margin-top:14px}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:190px}.photo:first-child{grid-row:span 1}}
+@media(max-width:600px){.wrap{width:min(var(--max),calc(100% - 22px))}section{padding:75px 0}.hero{padding-top:100px}.hero-art{min-height:320px}.hero-logo{width:68%}.program{grid-template-columns:1fr}.program img{height:190px}.facts{grid-template-columns:1fr}.gallery{grid-template-columns:1fr;grid-auto-rows:230px}.event{grid-template-columns:66px 1fr}.foot{display:block}.foot div+div{margin-top:18px}.modalmedia{height:260px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#home"><img src="logo.png" alt="Logo At-Taqwa"><span>AT-TAQWA<br><small>Bumisari • Natar</small></span></a>
+<div class="navlinks"><a href="#tentang">Tentang</a><a href="#program">Program</a><a href="#agenda">Agenda</a><a href="#kegiatan">Kegiatan</a><a href="#galeri">Galeri</a><a href="#lokasi">Lokasi</a></div>
+</nav></div></header>
+
+<main id="home">
+<section class="hero"><div class="wrap hero-grid">
+<div class="reveal"><span class="eyebrow">Masjid Jami' • Bumisari Natar</span>
+<h1>Masjid Jami'<br><span class="gold">At-Taqwa</span></h1>
+<p class="lead">Ruang ibadah, silaturahmi, dakwah, dan pelayanan umat untuk warga Bumisari dan sekitarnya.</p>
+<div class="actions"><a class="btn" href="#program">Jelajahi Program</a><a class="btn ghost" href="#lokasi">📍 Lokasi</a></div></div>
+<div class="hero-art reveal"><img class="hero-logo" src="logo.png" alt="Logo Masjid Jami At-Taqwa"><div class="float one">✦ <b>Beribadah</b><br><span style="color:var(--muted)">Bersama & bertumbuh</span></div><div class="float two">☾ <b>Komunitas</b><br><span style="color:var(--muted)">Untuk kemaslahatan</span></div></div>
+</div></section>
+
+<section id="tentang"><div class="wrap"><div class="head reveal"><div><div class="kicker">Tentang</div><h2>Rumah yang menghidupkan<br>silaturahmi.</h2></div><p>Website informasi digital Masjid Jami' At-Taqwa Bumisari Natar.</p></div>
+<div class="about"><div class="card quote reveal"><div class="arabic">وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ</div><p>“Dirikanlah salat dan tunaikanlah zakat.”</p><span class="tag">QS. Al-Baqarah: 43</span></div>
+<div class="card copy reveal"><p>Masjid Jami' At-Taqwa menjadi tempat ibadah sekaligus ruang berkumpulnya masyarakat. Melalui kegiatan keagamaan, sosial, pendidikan, dan kepemudaan, masjid diharapkan terus menjadi pusat kebaikan yang dekat dengan jamaah.</p><div class="facts"><div class="fact"><b>01</b><span>Ibadah & Shalat</span></div><div class="fact"><b>02</b><span>Dakwah & Pendidikan</span></div><div class="fact"><b>03</b><span>Sosial & Silaturahmi</span></div></div></div></div></div></section>
+
+<section id="program"><div class="wrap"><div class="head reveal"><div><div class="kicker">Program Kerja</div><h2>5 ruang kebaikan.</h2></div><p>Klik setiap card untuk melihat detail program.</p></div><div id="programs" class="programs"></div></div></section>
+
+<section id="agenda"><div class="wrap"><div class="head reveal"><div><div class="kicker">Agenda</div><h2>10 agenda jamaah.</h2></div><p>Semua tanggal, waktu, judul, dan deskripsi di bawah bisa kamu edit langsung dari file <b>index.html</b> lewat VS Code.</p></div><div id="events" class="events"></div></div></section>
+
+<section id="kegiatan"><div class="wrap"><div class="head reveal"><div><div class="kicker">Kegiatan</div><h2>10 kegiatan masjid.</h2></div><p>Daftar kegiatan siap kamu isi dan sesuaikan dengan kegiatan nyata Masjid Jami' At-Taqwa.</p></div><div id="activities" class="activities"></div></div></section>
+
+<section id="galeri"><div class="wrap"><div class="head reveal"><div><div class="kicker">Galeri</div><h2>Jejak kebersamaan.</h2></div><p>Ruang dokumentasi kegiatan Masjid Jami' At-Taqwa.</p></div><div class="gallery"><div class="photo reveal"><img src="program1.jpg"><div class="caption">Kegiatan dakwah</div></div><div class="photo reveal"><img src="program2.jpg"><div class="caption">Pendidikan Qur'an</div></div><div class="photo reveal"><img src="program3.jpg"><div class="caption">Kepedulian sosial</div></div><div class="photo reveal"><img src="program4.jpg"><div class="caption">Pemuda masjid</div></div></div></div></section>
+
+<section id="lokasi"><div class="wrap"><div class="head reveal"><div><div class="kicker">Lokasi</div><h2>Temukan kami.</h2></div><p>Datang, beribadah, bersilaturahmi.</p></div><div class="location"><div class="card location-card reveal"><div class="tag">Google Maps</div><h3>Masjid Jami' At-Taqwa</h3><div class="address">Jl. Lintas Sumatera No.162, Bumisari, Kec. Natar, Kabupaten Lampung Selatan, Lampung 35362</div><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Masjid%20Jami%27%20At-Taqwa%20Bumisari%20Natar">Buka Google Maps ↗</a></div><iframe class="map reveal" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Masjid%20Jami%27%20At-Taqwa%2C%20Bumisari%2C%20Natar%2C%20Lampung%2035362&output=embed"></iframe></div></div></section>
+</main>
+
+<footer><div class="wrap foot"><div><strong>Masjid Jami' At-Taqwa</strong><div style="margin-top:8px">Bumisari • Natar • Lampung Selatan</div></div><div>Website komunitas masjid • <span id="year"></span></div></div></footer>
+
+<div id="pop" class="pop"><b id="popTitle">Assalamu'alaikum</b><span id="popText">Selamat datang di website At-Taqwa.</span></div>
+<div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div class="modalbox"><div class="modalmedia"><img id="modalImg"></div><div class="modalbody"><button class="btn ghost close" onclick="closeModal()">Tutup</button><div class="tag" id="modalTag"></div><h2 id="modalTitle" style="font-size:38px;margin:10px 0"></h2><p id="modalDesc"></p></div></div></div>
+
+<script>
+// ================================================================
+// EDIT DI SINI DARI VS CODE
+// Ganti teks, tanggal, jam, dan deskripsi sesuai kegiatan asli.
+// Tidak ada tombol Edit/Simpan di website.
+// ================================================================
+
+const programs=[
+["Kajian & Dakwah","DAKWAH","program1.jpg","Kajian rutin, tausiyah, dan ruang belajar Islam yang hangat untuk jamaah. Jadikan masjid sebagai tempat bertumbuh dalam ilmu dan amal."],
+["TPQ & Qur'an","PENDIDIKAN","program2.jpg","Mendukung anak-anak mengenal Al-Qur'an, adab, dan dasar-dasar keislaman dengan suasana belajar yang menyenangkan."],
+["Santunan & Sosial","SOSIAL","program3.jpg","Gerakan kepedulian untuk yatim, dhuafa, dan warga yang membutuhkan melalui semangat berbagi dan gotong royong."],
+["Pemuda Masjid","KEPEMUDAAN","program4.jpg","Membangun generasi muda yang aktif, kreatif, dan dekat dengan masjid melalui kegiatan positif dan kebersamaan."],
+["Ahad Berkah","KEPEDULIAN","program5.jpg","Membangun Rasa Kepedulian Masyarakat."]
+];
+
+// 5 AGENDA — EDIT LANGSUNG DI SINI
+// Format: ["tanggal","bulan","judul","jam","deskripsi"]
+const events=[
+["05","Segera Hadir","Segera Hadir","Segera Hadir","Segera Hadir."],
+["05","Segera Hadir","Segera Hadir","Segera Hadir","Segera Hadir."],
+["05","Segera Hadir","Segera Hadir","Segera Hadir","Segera Hadir."],
+["05","Segera Hadir","Segera Hadir","Segera Hadir","Segera Hadir."],
+["05","Segera Hadir","Segera Hadir","Segera Hadir","Segera Hadir."],
+];
+
+// 10 KEGIATAN — EDIT LANGSUNG DI SINI
+// Format: ["nomor","judul","deskripsi"]
+const activities=[
+["01","Segera Hadir","Segera Hadir."],
+["01","Segera Hadir","Segera Hadir."],
+["01","Segera Hadir","Segera Hadir."],
+["01","Segera Hadir","Segera Hadir."],
+["01","Segera Hadir","Segera Hadir."],
+["01","Segera Hadir","Segera Hadir."],
+["01","Segera Hadir","Segera Hadir."],
+["01","Segera Hadir","Segera Hadir."],
+["01","Segera Hadir","Segera Hadir."],
+["01","Segera Hadir","Segera Hadir."],
+];
+
+function renderPrograms(){
+ document.getElementById("programs").innerHTML=programs.map((p,i)=>`
+ <article class="card program reveal" onclick="openModal(${i})">
+   <img src="${p[2]}" alt="${p[0]}">
+   <div class="program-body">
+     <span class="tag">0${i+1} · ${p[1]}</span>
+     <h3>${p[0]}</h3>
+     <p>${p[3]}</p>
+     <span class="arrow">LIHAT DETAIL →</span>
+   </div>
+ </article>`).join("");
+ observe();
+}
+
+function renderEvents(){
+ document.getElementById("events").innerHTML=events.map(e=>`
+ <article class="card event reveal">
+   <div class="date"><b>${e[0]}</b><span>${e[1]}</span></div>
+   <div><h3>${e[2]}</h3><p>${e[4]}</p><div class="meta">🕰 ${e[3]}</div></div>
+ </article>`).join("");
+ observe();
+}
+
+function renderActivities(){
+ document.getElementById("activities").innerHTML=activities.map(a=>`
+ <article class="card activity reveal">
+   <div class="activity-no">${a[0]}</div>
+   <div><h3>${a[1]}</h3><p>${a[2]}</p></div>
+ </article>`).join("");
+ observe();
+}
+
+function openModal(i){
+ const p=programs[i];
+ document.getElementById("modalImg").src=p[2];
+ document.getElementById("modalTag").textContent=p[1];
+ document.getElementById("modalTitle").textContent=p[0];
+ document.getElementById("modalDesc").textContent=p[3];
+ document.getElementById("modal").classList.add("open");
+}
+function closeModal(){document.getElementById("modal").classList.remove("open")}
+
+function observe(){
+ document.querySelectorAll(".reveal:not(.seen)").forEach(el=>{
+   const io=new IntersectionObserver(es=>es.forEach(e=>{
+     if(e.isIntersecting){e.target.classList.add("show","seen");io.unobserve(e.target)}
+   }),{threshold:.13});
+   io.observe(el);
+ });
+}
+
+const pops=[
+ ["Tentang At-Taqwa","Semoga setiap langkah kecil menjadi amal yang terus tumbuh."],
+ ["Program Kerja","Pilih ruang kebaikan yang ingin kamu dukung."],
+ ["Agenda","Jangan lewatkan momen kebersamaan jamaah."],
+ ["Kegiatan","Setiap kegiatan adalah jalan kecil menuju kemaslahatan."],
+ ["Galeri","Dokumentasi hari ini menjadi kenangan esok hari."],
+ ["Lokasi","Kami tunggu di rumah kebaikan, Bumisari Natar."]
+];
+let last=-1,timer;
+document.querySelectorAll("main section").forEach((s,i)=>
+ new IntersectionObserver(es=>es.forEach(e=>{
+   if(e.isIntersecting&&i>0&&i-1!==last){
+     last=i-1;
+     document.getElementById("popTitle").textContent=pops[i-1][0];
+     document.getElementById("popText").textContent=pops[i-1][1];
+     document.getElementById("pop").classList.add("show");
+     clearTimeout(timer);
+     timer=setTimeout(()=>document.getElementById("pop").classList.remove("show"),3200);
+   }
+ }),{threshold:.5}).observe(s)
+);
+
+document.getElementById("year").textContent=new Date().getFullYear();
+renderPrograms();
+renderEvents();
+renderActivities();
+observe();
+</script>
+</body>
+</html>
