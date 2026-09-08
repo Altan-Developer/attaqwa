@@ -1,23 +1,27 @@
-MASJID JAMI' AT-TAQWA — WEBSITE FINAL
+MASJID JAMI' AT-TAQWA — AUTOSCALE EDITION
 
-Cara pakai:
-1. Ekstrak ZIP.
-2. Buka folder di VS Code.
-3. Buka index.html di browser / Live Server.
-4. Semua data yang perlu diedit ada di bagian <script> dekat bawah index.html.
+Isi folder:
+- index.html
+- logo.png
+- program1.jpg sampai program5.jpg
 
-Yang bisa diedit dari VS Code:
-- 5 program kerja: const programs
-- 10 agenda: const events
-- 10 kegiatan: const activities
-- Judul/deskripsi bagian lain bisa diedit langsung pada HTML.
-- Foto program bisa diganti dengan mengganti nama file gambar pada const programs.
+Tambahan versi ini:
+- Layout autoscale/responsive untuk desktop, tablet, dan HP
+- Area FOLLOW US! dengan Instagram, Facebook, dan TikTok
+- Link + username sosial dibuat placeholder agar mudah diedit
+- Menu navigasi tetap bisa digeser di layar kecil
+- Modal program bisa ditutup dengan tombol Esc
 
-Format agenda:
-["tanggal","bulan","judul","jam","deskripsi"]
+EDIT MEDIA SOSIAL:
+Buka index.html, cari:
+<section id="sosial">
 
-Format kegiatan:
-["nomor","judul","deskripsi"]
+Lalu ganti:
+- https://instagram.com/
+- https://facebook.com/
+- https://tiktok.com/
+- @username_instagram
+- Nama Halaman Facebook
+- @username_tiktok
 
-Tidak ada tombol Edit atau Simpan di website.
-Responsive otomatis untuk HP, tablet, dan laptop.
+Website tetap memakai desain asli At-Taqwa dan aset gambar yang sama.
