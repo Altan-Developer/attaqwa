@@ -69,9 +69,9 @@ footer{padding:60px 0 35px;border-top:1px solid var(--line);color:var(--muted);f
 
 <section id="program"><div class="wrap"><div class="head reveal"><div><div class="kicker">Program Kerja</div><h2>5 ruang kebaikan.</h2></div><p>Klik setiap card untuk melihat detail program.</p></div><div id="programs" class="programs"></div></div></section>
 
-<section id="agenda"><div class="wrap"><div class="head reveal"><div><div class="kicker">Agenda</div><h2>10 agenda jamaah.</h2></div><p>Semua tanggal, waktu, judul, dan deskripsi di bawah bisa kamu edit langsung dari file <b>index.html</b> lewat VS Code.</p></div><div id="events" class="events"></div></div></section>
+<section id="agenda"><div class="wrap"><div class="head reveal"><div><div class="kicker">Agenda</div><h2>10 agenda jamaah.</h2></div><p></p></div><div id="events" class="events"></div></div></section>
 
-<section id="kegiatan"><div class="wrap"><div class="head reveal"><div><div class="kicker">Kegiatan</div><h2>10 kegiatan masjid.</h2></div><p>Daftar kegiatan siap kamu isi dan sesuaikan dengan kegiatan nyata Masjid Jami' At-Taqwa.</p></div><div id="activities" class="activities"></div></div></section>
+<section id="kegiatan"><div class="wrap"><div class="head reveal"><div><div class="kicker">Kegiatan</div><h2>10 kegiatan masjid.</h2></div><p></p></div><div id="activities" class="activities"></div></div></section>
 
 <section id="galeri"><div class="wrap"><div class="head reveal"><div><div class="kicker">Galeri</div><h2>Jejak kebersamaan.</h2></div><p>Ruang dokumentasi kegiatan Masjid Jami' At-Taqwa.</p></div><div class="gallery"><div class="photo reveal"><img src="program1.jpg"><div class="caption">Kegiatan dakwah</div></div><div class="photo reveal"><img src="program2.jpg"><div class="caption">Pendidikan Qur'an</div></div><div class="photo reveal"><img src="program3.jpg"><div class="caption">Kepedulian sosial</div></div><div class="photo reveal"><img src="program4.jpg"><div class="caption">Pemuda masjid</div></div></div></div></section>
 
@@ -104,13 +104,6 @@ footer{padding:60px 0 35px;border-top:1px solid var(--line);color:var(--muted);f
 <div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div class="modalbox"><div class="modalmedia"><img id="modalImg"></div><div class="modalbody"><button class="btn ghost close" onclick="closeModal()">Tutup</button><div class="tag" id="modalTag"></div><h2 id="modalTitle" style="font-size:38px;margin:10px 0"></h2><p id="modalDesc"></p></div></div></div>
 
 <script>
-// ================================================================
-// EDIT DI SINI DARI VS CODE
-// Ganti teks, tanggal, jam, dan deskripsi sesuai kegiatan asli.
-// Tidak ada tombol Edit/Simpan di website.
-//
-// FOLLOW US — edit 3 link + username di bagian HTML #sosial di atas.
-// ================================================================
 
 const programs=[
 ["Kajian & Dakwah","DAKWAH","program1.jpg","Kajian rutin, tausiyah, dan ruang belajar Islam yang hangat untuk jamaah. Jadikan masjid sebagai tempat bertumbuh dalam ilmu dan amal."],
@@ -120,34 +113,32 @@ const programs=[
 ["Ahad Berkah","KEPEDULIAN","program5.jpg","Program Berbagi Rezeki Berupa Sembako/Sayur Mayur terhadap Masyarakat Setempat."]
 ];
 
-// 10 AGENDA — EDIT LANGSUNG DI SINI
 // Format: ["tanggal","bulan","judul","jam","deskripsi"]
 const events=[
-["05","Sep","Akan Datang","Akan Datang","Akan Datang."],
-["05","Sep","Akan Datang","Akan Datang","Akan Datang."],
-["05","Sep","Akan Datang","Akan Datang","Akan Datang."],
-["05","Sep","Akan Datang","Akan Datang","Akan Datang."],
-["05","Sep","Akan Datang","Akan Datang","Akan Datang."],
-["05","Sep","Akan Datang","Akan Datang","Akan Datang."],
-["05","Sep","Akan Datang","Akan Datang","Akan Datang."],
-["05","Sep","Akan Datang","Akan Datang","Akan Datang."],
-["05","Sep","Akan Datang","Akan Datang","Akan Datang."],
-["05","Sep","Akan Datang","Akan Datang","Akan Datang."],
+["-","Akan Datang","Ngobrol Perkara Iman (NGOPI)","Akan Datang","Akan Datang."],
+["-","Akan Datang","Pelatihan Life Skill","Akan Datang","Akan Datang."],
+["-","Akan Datang","Ngobrol Kisah Nabi (Siroh)","Akan Datang","Akan Datang."],
+["-","Akan Datang","Yasinan","Akan Datang","Akan Datang."],
+["-","Akan Datang","Kajian","Akan Datang","Akan Datang."],
+["-","Akan Datang","Akan Datang","Akan Datang","Akan Datang."],
+["-","Akan Datang","Akan Datang","Akan Datang","Akan Datang."],
+["-","Akan Datang","Akan Datang","Akan Datang","Akan Datang."],
+["-","Akan Datang","Akan Datang","Akan Datang","Akan Datang."],
+["-","Akan Datang","Akan Datang","Akan Datang","Akan Datang."],
 ];
 
-// 10 KEGIATAN — EDIT LANGSUNG DI SINI
 // Format: ["nomor","judul","deskripsi"]
 const activities=[
-["01","Akan Datang","Akan Datang"],
-["02","Akan Datang","Akan Datang"],
-["03","Akan Datang","Akan Datang"],
-["04","Akan Datang","Akan Datang"],
-["05","Akan Datang","Akan Datang"],
-["06","Akan Datang","Akan Datang"],
-["07","Akan Datang","Akan Datang"],
-["08","Akan Datang","Akan Datang"],
-["09","Akan Datang","Akan Datang"],
-["10","Akan Datang","Akan Datang"],
+["-","Kurban","Akan Datang"],
+["-","Berbagi Takjil (Ramadhan)","Akan Datang"],
+["-","Bersih - Bersih Bersama","Akan Datang"],
+["-","Akan Datang","Akan Datang"],
+["-","Akan Datang","Akan Datang"],
+["-","Akan Datang","Akan Datang"],
+["-","Akan Datang","Akan Datang"],
+["-","Akan Datang","Akan Datang"],
+["-","Akan Datang","Akan Datang"],
+["-","Akan Datang","Akan Datang"],
 ];
 
 function renderPrograms(){
